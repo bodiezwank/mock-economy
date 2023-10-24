@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="currencies-style.css">
+    <title>Currencies | HPSH Mock Economy</title>
+</head>
+<body>
+    <header>
+        <h1 id="pageTitle">Currencies</h1>
+        <button id="returnHome" onclick="window.location.href='../home/index.html';">Home</button>
+    </header>
+    <section class="currency">
+        <h2 id="dollarAmount"></h2>
+        <h2 id="pinkAmount"></h2>
+    </section>
+
+
+    <section class="currencyExchange">
+        <h2 id="dollarToPink"></h2>
+        <h2 id="pinkToDollar"></h2>
+    </section>
+
+    <div class="admin-only" id="admin-ticker"><b>*</b></div>
+    
+    <button class="admin-only" id="dollar-button">Edit dollars</button>
+    <form id="dollar-form">
+        <input type="text" name="dollarInputField" placeholder="Enter dollar amount">
+        <input type="submit" value="Submit">
+    </form>
+    
+    <button class="admin-only" id="pink-button">Edit pinks</button>
+    <form id="pink-form">
+        <input type="text" name="pinkInputField" placeholder="Enter pink amount">
+        <input type="submit" value="Submit">
+    </form>
+    
+    <script src="currencies-script.js"></script>
+</body>
+</html>
